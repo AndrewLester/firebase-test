@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "myApp",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "ssrServer"
+      }
+    ],
+    "predeploy": ["npm run build"]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}
